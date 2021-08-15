@@ -1,0 +1,41 @@
+* {
+  margin: auto;
+  margin-top: 90px;
+}
+
+body {
+  background-color: brown;
+}
+
+.loader {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.loader div {
+  position: absolute;
+  border: 4px solid rgb(62, 62, 161);
+  border-radius: 50%;
+  animation: pulse 1s infinite ease-out;
+}
+
+.loader div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+
+@keyframes pulse {
+  0% {
+    top: 40px;
+    left: 40px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+  }
+}
